@@ -1,0 +1,44 @@
+.thanks {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	align-items: center;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	opacity: 0;
+	padding: 1.25rem;
+	pointer-events: none;
+	transition: opacity 0.25s ease-in-out;
+	width: 100%;
+}
+
+.thanks--isactive {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.thanks__message {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.thanks__emoji {
+	display: block;
+	font-size: 4rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+	.thanks__emoji {
+		font-size: 5rem;
+	}
+
+	.thanks__message {
+		font-size: 4rem;
+	}
+}

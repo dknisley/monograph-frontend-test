@@ -1,0 +1,72 @@
+@keyframes slide-up {
+	0% {
+		opacity: 0.25;
+		transform: translateY(10%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.button {
+	align-items: center;
+	animation: slide-up 0.25s ease-in-out;
+	background: #26547c;
+	border: none;
+	border-radius: 5rem;
+	box-shadow: 0 30px 80px rgba(134, 158, 174, 0.15),
+	0 4px 30px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.2rem;
+	justify-content: center;
+	line-height: 1;
+	margin-bottom: 2rem;
+	outline: none;
+	padding: 1.25rem 3rem;
+	transition: all 0.25s ease-in-out;
+	width: 100%;
+}
+
+.button:hover {
+	background: #3883b8;
+	box-shadow: 0 10px 40px rgba(134, 158, 174, 0.2);
+}
+
+.button:active {
+	background: #3883b8;
+	box-shadow: 0 5px 20px rgba(134, 158, 174, 0.25);
+	outline: none;
+}
+
+.button:focus {
+	background: #3883b8;
+	outline: none;
+}
+
+@media screen and (min-width: 720px) {
+	@keyframes slide-up {
+		0% {
+			opacity: 0.25;
+			transform: translateX(-50%) translateY(10%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateX(-50%) translateY(0);
+		}
+	}
+
+	.button--fixed {
+		position: fixed;
+		bottom: 2rem;
+		left: 50%;
+		/* center with button when fixed */
+
+		transform: translateX(-50%) translateY(0);
+		width: auto;
+	}
+}
