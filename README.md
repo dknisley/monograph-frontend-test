@@ -1,6 +1,6 @@
 ## Dan Knisley Frontend Test
 
-[Notes and Links](https://docs.google.com/document/d/1zco-0MIW2WLlCHKfWC-LNORDow5uFVqpYvAcyv9S4QQ/edit?usp=sharing)
+An overview of my questions, notes and strategy can be found in this [Google Doc](https://docs.google.com/document/d/1zco-0MIW2WLlCHKfWC-LNORDow5uFVqpYvAcyv9S4QQ/edit?usp=sharing)
 
 ---
 
