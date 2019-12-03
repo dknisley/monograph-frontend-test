@@ -21,6 +21,7 @@ function Dropdown({ children, dropTrigger }) {
 			document.removeEventListener('mousedown', handleClickOutside)
 		}
 	})
+
 	return (
 		<div
 			className={`custom-emoji-picker ${isOpen &&

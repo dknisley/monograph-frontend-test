@@ -1,7 +1,7 @@
 import React from 'react'
+import Picker from 'emoji-picker-react'
 import Dropdown from './Dropdown'
 import Icon from '../icons'
-import Picker from 'emoji-picker-react'
 
 function EmojiPicker({ update }) {
 	const handleChange = (e, emojiObject) => {

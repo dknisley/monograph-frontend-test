@@ -41,7 +41,7 @@ function Form(props) {
 			<input
 				className='form-input'
 				type='number'
-				inputmode='numeric'
+				inputMode='numeric'
 				name='party'
 				min='1'
 				onChange={e => handleChange(e.target.name, e.target.value)}
