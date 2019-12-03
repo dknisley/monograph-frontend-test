@@ -1,34 +1,38 @@
-.app {
+.app-wrapper--withModal {
+	height: 100vh;
+	overflow-y: hidden;
 }
 
 .app-main {
-  display: flex;
-  flex-direction: column-reverse;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .app-left,
 .app-right {
-  display: flex;
-  flex: 0 0 100%;
-  justify-content: center;
-  max-width: 100%;
-  padding: 2rem 1.25rem;
+	display: flex;
+	flex: 0 0 100%;
+	justify-content: center;
+	max-width: 100%;
+	padding: 2rem 1.25rem;
 }
 
 .app-right {
-  background: #f8fbfd;
+	background: #f8fbfd;
 }
 
 @media screen and (min-width: 720px) {
-  .app-main {
-    flex-direction: row;
-  }
-  .app-left,
-  .app-right {
-    flex: 0 0 50%;
-    padding: 0;
-  }
-  .app-right {
-    min-height: 75vh;
-  }
+	.app-main {
+		flex-direction: row;
+	}
+
+	.app-left,
+	.app-right {
+		flex: 0 0 50%;
+		padding: 0;
+	}
+
+	.app-right {
+		min-height: 75vh;
+	}
 }
